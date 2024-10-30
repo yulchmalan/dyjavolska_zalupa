@@ -112,6 +112,7 @@ nav .wrapper {
   border-radius: 23px;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 h1 {
@@ -153,7 +154,7 @@ header .container {
   height: 100%;
   display: flex;
   justify-content: center;
-  gap: 180px;
+  gap: 40px;
   align-items: center;
 }
 header .title {
@@ -170,7 +171,10 @@ header .title p {
 }
 
 .image-circle {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 550px;
   height: 550px;
   border-radius: 50%;
@@ -179,8 +183,8 @@ header .title p {
 
 .circles-container {
   position: relative;
-  width: 550px;
-  height: 550px;
+  width: 750px;
+  height: 750px;
   border-radius: 50%;
 }
 
