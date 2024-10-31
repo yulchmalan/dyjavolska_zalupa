@@ -29,3 +29,28 @@ const app = () => {
 
 app();
 
+var swiper = new Swiper(".mySwiper", {
+    effect: "creative",
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 3,
+    initialSlide: 2,
+    enabled: true,
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    },
+    creativeEffect: {
+        prev: {
+          // will set `translateZ(-400px)` on previous slides
+          translate: ['-40px', '-40px', -1],
+          opacity: 0.7,
+        },
+        next: {
+          // will set `translateX(100%)` on next slides
+          translate: ['-80px', '-80px', -2],
+          opacity: 0.5,
+        },
+      },
+  });
