@@ -43,19 +43,9 @@
 <symbol id="check">
     <path d="M16.8996 11.7155L10.3018 18.3133L7.41528 15.4268M24.3221 14.1897L17.7243 20.7875L16.0749 19.138M30.7056 15.8391C30.7056 24.0378 24.0593 30.6841 15.8606 30.6841C7.66196 30.6841 1.01562 24.0378 1.01562 15.8391C1.01562 7.64047 7.66196 0.994141 15.8606 0.994141C24.0593 0.994141 30.7056 7.64047 30.7056 15.8391Z" stroke="currentColor" stroke-width="1.7936" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
+<symbol id="cornerArrow">
+    <path d="M1 21L11 11L21 1M21 1H13.5M21 1V8.5" stroke="currentColor" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
 </svg>
-
-    <svg width="33" height="46" viewBox="0 0 33 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M23.849 35.3719H9.11562M23.849 35.3719V37.8275C23.849 40.1158 23.849 41.2599 23.4751 42.1624C22.9767 43.3658 22.0206 44.3219 20.8172 44.8203C19.9147 45.1941 18.7706 45.1941 16.4823 45.1941V45.1941C14.194 45.1941 13.0499 45.1941 12.1473 44.8203C10.944 44.3219 9.98791 43.3658 9.48946 42.1624C9.11562 41.2599 9.11562 40.1158 9.11562 37.8275V35.3719M23.849 35.3719V32.8984C23.849 32.1118 24.0963 31.3451 24.5559 30.7068L28.7314 24.9073C35.9201 14.9231 28.7853 0.994141 16.4823 0.994141V0.994141C4.17932 0.994141 -2.95555 14.9231 4.23313 24.9073L8.40871 30.7068C8.86833 31.3451 9.11562 32.1118 9.11562 32.8984V35.3719M12.799 21.8664L16.4823 28.0053L20.1656 21.8664" stroke="#FBFBFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-
-</svg>
-
-<svg width="36" height="31" viewBox="0 0 36 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-</svg>
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-</svg>
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-
 
 

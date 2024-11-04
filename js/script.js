@@ -50,5 +50,17 @@ var swiper = new Swiper(".mySwiper", {
           translate: ['-100px', '-60px', -2],
           opacity: 0.2,
         },
-      },
-  });
+    },
+});
+
+var swiper = new Swiper(".quoteSwiper", {
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 1,
+    effect: "fade",
+    enabled: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
