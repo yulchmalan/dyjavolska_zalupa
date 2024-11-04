@@ -647,8 +647,10 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -672,7 +674,8 @@ p {
   font-size: 3rem;
 }
 #process .card {
-  width: 34.5rem;
+  max-width: 34.5rem;
+  width: 100%;
   height: 25.5rem;
   background: left bottom url(../images/process-background.png) no-repeat;
   background-size: contain;
@@ -798,7 +801,7 @@ p {
   text-align: center;
 }
 #quote .swiper-slide {
-  padding: 4.5rem 10rem;
+  padding: 4.5rem 1rem;
   text-align: center;
 }
 #quote .author {
@@ -814,7 +817,7 @@ p {
 }
 #quote .quoteSwiper {
   position: relative;
-  height: 75rem;
+  height: 64rem;
 }
 #quote .quoteSwiper .swiper-button-next {
   position: absolute;
@@ -918,6 +921,9 @@ footer .upper-footer .col {
 footer .upper-footer .col:nth-child(1) {
   width: 35rem;
 }
+footer .upper-footer .col:nth-child(4) {
+  width: 35rem;
+}
 footer .bottom-footer {
   row-gap: 16px;
   display: -webkit-box;
@@ -1011,7 +1017,7 @@ footer form input[type=submit] {
 }
 @media (min-width: 600px) {
   .quoteSwiper {
-    height: 62rem !important;
+    height: 56rem !important;
   }
 }
 @media (min-width: 780px) {
@@ -1039,17 +1045,20 @@ footer form input[type=submit] {
     width: 100%;
     max-width: 66.5rem;
   }
-  .upper-footer {
+  footer .upper-footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .bottom-footer {
+  footer .bottom-footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .swiper-slide {
+    padding: 4.5rem 10rem;
   }
 }
 @media (min-width: 1280px) {
@@ -1061,6 +1070,12 @@ footer form input[type=submit] {
   }
   .heading-container {
     margin: 10rem auto 0;
+  }
+  #process .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 @media (min-width: 1440px) {
