@@ -5,9 +5,11 @@
 }
 
 header {
-    height: 100vh;
+    min-height: 100vh;
     min-height: 100rem;
+    padding: 20px 0;
     background: $background-color url(../images/backgroud.png) center top;
+    background-size: cover;
     .text-content {
         margin-top: 15rem;
         height: 100%;
@@ -117,9 +119,9 @@ header {
 .partners {
     .wrapper {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 1rem;
-        flex-wrap: wrap;
+        flex-direction: column;
     } 
 }
 

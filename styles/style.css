@@ -6,9 +6,11 @@
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   min-height: 100rem;
+  padding: 20px 0;
   background: #060606 url(../images/backgroud.png) center top;
+  background-size: cover;
 }
 header .text-content {
   margin-top: 15rem;
@@ -143,12 +145,14 @@ header .title p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 1rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .sprite-container {
@@ -204,6 +208,11 @@ header .title p {
             transform: translateX(0px);
   }
 }
+.logo {
+  max-width: 10.5rem;
+  width: 100%;
+}
+
 nav {
   z-index: 1000;
   position: fixed;
@@ -964,13 +973,15 @@ footer .icon-container {
 }
 footer form {
   position: relative;
-  width: 43rem;
+  max-width: 43rem;
+  width: 100%;
   height: 6.7rem;
 }
 footer form input[type=email] {
   position: absolute;
   right: 0;
-  width: 43rem;
+  max-width: 43rem;
+  width: 100%;
   height: 6.7rem;
   padding: 2.2rem;
   outline: none;
@@ -1004,6 +1015,18 @@ footer form input[type=submit] {
   }
 }
 @media (min-width: 780px) {
+  .logo {
+    max-width: 15.5rem;
+  }
+  .partners .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .quoteSwiper {
     height: 58rem !important;
   }
