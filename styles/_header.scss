@@ -1,37 +1,41 @@
+@import "./variables";
+
 .ornament {
     position: absolute;
 }
 
 header {
     height: 100vh;
-    min-height: 1000px;
+    min-height: 100rem;
     background: $background-color url(../images/backgroud.png) center top;
     .text-content {
-        margin-top: 150px;
+        margin-top: 15rem;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 180px;
+        gap: 18rem;
     }
     .container {
         margin: auto;
         height: 100%;
         display: flex;
         justify-content: center;
-        gap: 40px;
+        gap: 4rem;
         align-items: center;
     }
     .title {
         position: relative;
         display: flex;
         flex-direction: column;
-        gap: 24px;
+        gap: 2.4rem;
         color: $font-color;
-        width: 600px;
-        margin-bottom: 32px;
+        min-width: 300px;
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 3.2rem;
         p {
-            font-size: 18px;
+            font-size: 1.8rem;
         }
     }
 }
@@ -41,17 +45,18 @@ header {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 550px;
-    height: 550px;
+    width: 55rem;
+    height: 55rem;
     border-radius: 50%;
     background: no-repeat center/contain url(../images/people.png);
 }
 
 .circles-container {
     position: relative;
-    width: 750px;
-    height: 750px;
+    width: 75rem;
+    height: 75rem;
     border-radius: 50%;
+    display: none;
 }
 
 .circle-bg {
@@ -113,7 +118,8 @@ header {
     .wrapper {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 1rem;
+        flex-wrap: wrap;
     } 
 }
 

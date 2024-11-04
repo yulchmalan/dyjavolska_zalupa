@@ -11,13 +11,18 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+}
+
 body{
     overflow-x: hidden;
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 144rem;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .light-icon {
@@ -28,13 +33,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    height: 48px;
+    gap: 1rem;
+    height: 4.8rem;
     background-color: $white;
     color: $light-black;
-    padding: 0 15px;
+    padding: 0 1.5rem;
     font-family: "DM sans", sans-serif;
-    border-radius: 23px;
+    border-radius: 2.3rem;
     border: none;
     outline: none;
     cursor: pointer;
@@ -53,38 +58,38 @@ body{
 h1 {
     font-family: "Roboto serif", serif;
     font-weight: 600;
-    font-size: 64px;
+    font-size: 6.4rem;
 }
 
 h2 {
     font-family: "Roboto serif", serif;
     font-weight: 600;
-    font-size: 64px;
+    font-size: 6.4rem;
 }
 
 h4 {
     font-family: "Roboto serif", serif;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 500;
 }
 
 h5 {
     font-family: "Roboto serif", serif;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 500;
 }
 
 h6 {
     font-family: "Roboto serif", serif;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 
 p{
     font-family: "DM sans", sans-serif;
     font-weight: 400;
-    letter-spacing: 0.3px;
-    font-size: 16px;
+    letter-spacing: 0.03rem;
+    font-size: 1.6rem;
 }
 
 
@@ -93,8 +98,8 @@ p{
     display: inline-flex;
     background-color: $black;
     color: $font-color;
-    width: 28px;
-    height: 28px;
+    width: 2.8rem;
+    height: 2.8rem;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -106,29 +111,31 @@ p{
 
 .heading-container {
     text-align: center;
-    margin: 100px auto 0;
-    width: 695px;
+    margin: 5rem auto 0;
+    width: 100%;
+    max-width: 69.5rem;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 2.4rem;
 }
 
 #services {
     .container {
-        margin: 80px auto 115px;
+        margin: 8rem auto 11.5rem;
         display: flex;
         flex-wrap: wrap;
-        gap: 80px 64px;
+        justify-content: center;
+        gap: 8rem 6.4rem;
     }
     .card {
-        width: 425px;
-        height: 370px;
-        padding: 55px;
+        width: 42.5rem;
+        height: 37rem;
+        padding: 5.5rem;
         background-color: $card-background-color;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border-radius: 20px;
+        border-radius: 2rem;
         transition: .5s all ease-in;
         &:hover{
             background-color: $background-color;
@@ -139,7 +146,7 @@ p{
             }
         }
         h5 {
-            margin-bottom: 15px;
+            margin-bottom: 1.5rem;
         }
         .icon {
             transition: .4s all ease-in;
@@ -148,8 +155,8 @@ p{
 }
 
 .icon {
-    width: 80px;
-    height: 80px;
+    width: 8rem;
+    height: 8rem;
     background-color: $background-color;
     color: $font-color;
     display: flex;
@@ -160,39 +167,41 @@ p{
 
 #aboutUs {
     background-color: $background-color;   
-    height: 900px;
+    min-height: 90rem;
     color: $font-color;
     .container {
+        padding: 30px 10px;
         margin: 0 auto;
         width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 280px;
+        gap: 28rem;
     }
     .text-content {
-        width: 580px;
+        width: 100%;
+        max-width: 58rem;
         display: flex;
         flex-direction: column;
-        gap: 25px;
-        margin-bottom: 32px;
+        gap: 2.5rem;
+        margin-bottom: 3.2rem;
     }
     .numbers {
         display: flex;
-        gap: 60px;
+        gap: 6rem;
         span {
             display: inline-block;
-            padding-bottom: 10px;
+            padding-bottom: 1rem;
         }
     }
     p {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 }
 
 .big-number {
-    font-size: 45px;
+    font-size: 4.5rem;
     font-weight: 600;
     font-family: "Roboto serif", serif;
 }
@@ -200,27 +209,29 @@ p{
 #process {
     .container {
         display: flex;
-        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2.5rem;
         align-items: center;
-        margin-top: 80px;
+        margin-top: 8rem;
     }
     .card-head {
-        margin-left: 60px;
+        margin-left: 6rem;
         display: flex;
-        gap: 30px;
+        gap: 3rem;
         align-items: center;
         h5 {
-            font-size: 30px;
+            font-size: 3rem;
         }
     }
     .card {
-        width: 345px;
-        height: 255px;
+        width: 34.5rem;
+        height: 25.5rem;
         background: left bottom url(../images/process-background.png) no-repeat;
         background-size: contain;
         p {
-            width: 280px;
-            padding: 35px 40px;
+            width: 28rem;
+            padding: 3.5rem 4rem;
         }
         .icon {
             border: 3px solid $border-color;
@@ -230,56 +241,75 @@ p{
 
 #showcase {
     .card {
-        width: 665px;
+        width: 100%;
+        max-width: 66.5rem;
         .text-content {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 1rem;
         }
         display: flex;
         flex-direction: column;
-        gap: 24px;
-        img {
+        gap: 2.4rem;
+        .image-wrapper {
             display: block;
             z-index: 1;
             position: relative;
-            border-radius: 20px;
-            max-width: 665px;
-            max-height: 450px;
-            // TODO
-            // &:hover {
-            //     &::after {
-            //         z-index: 10;
-            //         content: "";
-            //         display: block;
-            //         width: 100%;
-            //         height: 100%;
-            //         position: absolute;
-            //         top: 0;
-            //         left: 0;
-            //         background-color: $black;
-            //         border-radius: 20px;
-            //         opacity: 0.2;
-            //     }
-            // }
+            border-radius: 2rem;
+            width: 100%;
+            max-width: 66.5rem;
+            max-height: 45rem;
+            transition: .2s all ease-in-out;
+            cursor: pointer;
+            img {
+                width: 100%;
+            }
+            &::after {
+                z-index: 10;
+                color: $font-color;
+                font-size: 3.5rem;
+                text-align: center;
+                line-height: 5rem;
+                content: "\2197";
+                display: block;
+                width: 5rem;
+                height: 5rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: $black;
+                border-radius: 50%;
+                opacity: 0;
+                transition: all .5s ease-in-out;
+            }
+            &:hover {
+                filter: saturate(.5);
+                &::after {
+                    opacity: 1;
+                }
+            }
         }
     }
     .container {
-        margin-top: 85px;
+        justify-content: center;
+        margin-top: 8.5rem;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row-reverse;
-        column-gap: 70px;
+        gap: 7rem;
         .col {
             display: flex;
             flex-direction: column;
-            gap: 88px;
+            gap: 8.8rem;
+            width: 100%;
         }
     }
     .btn-container {
         position: relative;
-        width: 665px;
-        height: 100px;
+        width: 100%;
+        max-width: 66.5rem;
+        height: 10rem;
         .btn {
             position: absolute;
             right: 0;
@@ -289,43 +319,43 @@ p{
 }
 
 #quote {
-    margin: 100px 0;
+    margin: 10rem 0;
     .container {
         background-color: $card-background-color;
-        border-radius: 20px;
+        border-radius: 2rem;
         text-align: center;
     }
     .swiper-slide {
-        padding: 45px 100px;
+        padding: 4.5rem 10rem;
         text-align: center;
     }
     .author {
         display: flex;
         flex-direction: column;
-        gap: 5px;
-        margin-bottom: 100px;
+        gap: .5rem;
+        margin-bottom: 10rem;
     }
     .quoteSwiper {
-        height: 480px;
         position: relative;
+        height: 75rem;
         .swiper-button-next {
             position: absolute;
             top: auto;
-            bottom: 45px;
+            bottom: 4.5rem;
             left: 50.5%;
         }
         .swiper-button-prev {
             position: absolute;
             top: auto;
-            bottom: 45px;
+            bottom: 4.5rem;
             left: auto;
             right: 50.5%;
         }
         .swiper-button {
             position: absolute;
             display: block;
-            width: 44px;
-            height: 44px;
+            width: 4.4rem;
+            height: 4.4rem;
             border-radius: 50%;
             color: $light-black;
             border: 1px $light-black solid;
@@ -338,8 +368,8 @@ p{
             }
             &::after {
                 position: absolute;
-                font-size: 20px;
-                line-height: 44px;
+                font-size: 2rem;
+                line-height: 4.4rem;
                 font-weight: 600;
                 right: 50%;
                 transform: translateX(50%);
@@ -349,8 +379,8 @@ p{
 }
 
 .pfp {
-    height: 150px;
-    width: 150px;
+    height: 15rem;
+    width: 15rem;
     display: block;
     border-radius: 50%;
     margin: 0 auto;
@@ -362,6 +392,168 @@ q {
     display: block;
     font-weight: bold;
     font-family: "Roboto serif", serif;
-    font-size: 25px;
+    font-size: 2.5rem;
     margin: 35px 0;
+}
+
+address {
+    font-family: "DM sans", sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+}
+
+footer {
+    .icon {
+        width: 5rem;
+        height: 5rem;
+        background-color: $font-color;
+        color: $background-color;
+    }
+    a {
+        color: $font-color;
+        text-decoration: none;
+    }
+    background-color: $background-color;
+    color: $font-color;
+    .upper-footer {
+        padding: 10rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 16px;
+        .col {
+            gap: 2.4rem;
+        }
+        .col:nth-child(1) {
+            width: clamp(20rem, 35rem, 35rem);
+        }
+    }
+    .bottom-footer {
+        row-gap: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        border-top: 1px solid $font-color;
+        padding: 3rem 0 6rem;
+        .col {
+            gap: 1.6rem;
+        }
+    }
+    img {
+        width: 20rem;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        li {
+            list-style: none;
+            font-family: "DM sans", sans-serif;
+            font-size: 1.6rem;
+        }
+    }
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+    .icon-container {
+        flex-direction: row;
+    }
+    form {
+        position: relative;
+        width: 43rem;
+        height: 6.7rem;
+        input[type="email"]{
+            position: absolute;
+            right: 0;
+            width: 43rem;
+            height: 6.7rem;
+            padding: 2.2rem;
+            outline: none;
+            border: none;
+            border-radius: 4rem;
+            font-size: 1.8rem;
+        }
+        input[type="submit"] {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 1.2rem 1.5rem;
+            border: none;
+            outline: none;
+            border-radius: 2rem;
+            font-size: 1.8rem;
+            background-color: $light-black;
+            color: $font-color;
+        }
+    }
+}
+
+@media (min-width: 480px) {
+    .text-content {
+        gap: 6rem;
+    }
+}
+
+@media (min-width: 600px) { 
+    .quoteSwiper {
+        height: 62rem !important;
+    }
+}
+
+
+@media (min-width: 780px) {
+    .quoteSwiper {
+        height: 58rem !important;
+    }
+    #showcase .container {
+        justify-content: center;
+        .col {
+            width: 100%;
+            max-width: 66.5rem;
+        }
+    }
+    .upper-footer {
+        flex-direction: row;
+    }
+    .bottom-footer {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1280px) {
+    .circles-container {
+        display: block;
+    }
+    .quoteSwiper {
+        height: 48rem !important;
+    }
+    .heading-container {
+        margin: 10rem auto 0;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .container { 
+      padding: 0;
+    }
+    #aboutUs {
+        height: 90rem;
+        .container {
+            padding: 0;
+        }
+        .swiper-container {
+            display: block;
+        }
+    }
+    #showcase .container {
+        .col {
+            width: 50%;
+            max-width: 66.5rem;
+        }
+    }
 }
