@@ -98,4 +98,19 @@ nav {
     transform: translateX(0%);
     z-index: 100;
     background-color: $light-black;
+    li {
+        opacity: 1;
+    }
+}
+
+.nav-light {
+    background-color: $white;
+    .nav-links {
+        a {
+            color: $light-black;
+        }
+    }
+    .nav-active {
+        background-color: $font-color;
+    }
 }

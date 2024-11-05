@@ -1,4 +1,4 @@
-const navbar = document.querySelector('nav');
+const navbar = document.querySelector('.nav-scroll');
 
 const navSlide = () => {
     const burger = document.querySelector('.burger');
@@ -15,12 +15,6 @@ const navSlide = () => {
             icon.setAttribute('href', 'images/icons.svg#burger');
         }
 
-        if (window.scrollY > 0) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-
         navLinks.forEach((link, index) => {
             if (link.style.animation) {
                 link.style.animation = '';
@@ -31,10 +25,12 @@ const navSlide = () => {
     });
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 0) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
+        if (navbar) { 
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
         }
     });
 };
@@ -54,10 +50,6 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     initialSlide: 2,
     enabled: true,
-    keyboard: {
-        enabled: true,
-        onlyInViewport: false,
-    },
     creativeEffect: {
         prev: {
           translate: ['-50px', '-30px', -1],
