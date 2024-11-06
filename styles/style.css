@@ -9,7 +9,7 @@ header#indexHeader {
   min-height: 100vh;
   min-height: 100rem;
   padding: 20px 0;
-  background: #060606 url(../images/backgroud.png) center top;
+  background: #060606 url(../images/backgroud.webp) center top;
   background-size: cover;
 }
 header#indexHeader .text-content {
@@ -135,7 +135,7 @@ header#indexHeader .title p {
   width: 55rem;
   height: 55rem;
   border-radius: 50%;
-  background: no-repeat center/contain url(../images/people.png);
+  background: no-repeat center/contain url(../images/people.webp);
 }
 
 .circles-container {
@@ -221,7 +221,7 @@ header#indexHeader .title p {
 }
 
 .sprite-container {
-  background: url(../images/partners.png) no-repeat;
+  background: url(../images/partners.webp) no-repeat;
 }
 
 .partner1 {
@@ -826,7 +826,7 @@ label {
   max-width: 34.5rem;
   width: 100%;
   height: 25.5rem;
-  background: left bottom url(../images/process-background.png) no-repeat;
+  background: left bottom url(../images/process-background.webp) no-repeat;
   background-size: contain;
 }
 #process .card p {
@@ -1469,7 +1469,7 @@ footer form input[type=submit] {
           justify-content: center;
   gap: 24px;
   min-height: 200px;
-  background: url(../images/banner-bg.png) center;
+  background: url(../images/banner-bg.webp) center;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20px;

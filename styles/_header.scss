@@ -8,7 +8,7 @@ header#indexHeader {
     min-height: 100vh;
     min-height: 100rem;
     padding: 20px 0;
-    background: $background-color url(../images/backgroud.png) center top;
+    background: $background-color url(../images/backgroud.webp) center top;
     background-size: cover;
     .text-content {
         margin-top: 15rem;
@@ -94,7 +94,7 @@ header#indexHeader {
     width: 55rem;
     height: 55rem;
     border-radius: 50%;
-    background: no-repeat center/contain url(../images/people.png);
+    background: no-repeat center/contain url(../images/people.webp);
 }
 
 .circles-container {
@@ -170,7 +170,7 @@ header#indexHeader {
 }
 
 .sprite-container {
-    background: url(../images/partners.png) no-repeat;
+    background: url(../images/partners.webp) no-repeat;
 }
 
 .partner1 {
