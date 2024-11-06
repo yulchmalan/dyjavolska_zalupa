@@ -40,39 +40,3 @@ const app = () => {
 };
 
 app();
-
-
-var swiper = new Swiper(".mySwiper", {
-    effect: "creative",
-    grabCursor: true,
-    centeredSlides: true,
-    loop: true,
-    slidesPerView: 3,
-    initialSlide: 2,
-    enabled: true,
-    creativeEffect: {
-        prev: {
-          translate: ['-50px', '-30px', -1],
-          opacity: 0.5,
-        },
-        next: {
-          translate: ['-100px', '-60px', -2],
-          opacity: 0.2,
-        },
-    },
-});
-
-var swiper = new Swiper(".quoteSwiper", {
-    centeredSlides: true,
-    loop: true,
-    slidesPerView: 1,
-    effect: "fade",
-    enabled: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    fadeEffect: {
-        crossFade: true
-      },
-});

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
 .ornament {
   position: absolute;
 }
@@ -56,6 +57,15 @@ header#indexHeader .title {
   width: 100%;
   max-width: 600px;
   margin-bottom: 3.2rem;
+}
+header#indexHeader .title::before {
+  position: absolute;
+  display: block;
+  content: url(../images/Ornament.svg);
+  width: 190px;
+  height: 190px;
+  top: -50px;
+  left: -280px;
 }
 header#indexHeader .title p {
   font-size: 1.8rem;
@@ -552,7 +562,7 @@ body {
   background-color: #fff;
   color: #121212;
   padding: 0 1.5rem;
-  font-family: "DM sans", sans-serif;
+  font-family: "DM sans", "PT sans", sans-serif;
   border-radius: 2.3rem;
   border: none;
   outline: none;
@@ -616,7 +626,7 @@ h6 {
 }
 
 p {
-  font-family: "DM sans", sans-serif;
+  font-family: "DM sans", "PT sans", sans-serif;
   font-weight: 400;
   letter-spacing: 0.03rem;
   font-size: 1.6rem;
@@ -627,7 +637,7 @@ p a {
 }
 
 label {
-  font-family: "DM sans", sans-serif;
+  font-family: "DM sans", "PT sans", sans-serif;
   font-weight: 400;
   letter-spacing: 0.03rem;
   font-size: 1.8rem;
@@ -1761,4 +1771,18 @@ footer form input[type=submit] {
   #mission .wrapper {
     display: block;
   }
+}
+#notFound .container {
+  margin: 250px auto 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
 }/*# sourceMappingURL=style.css.map */
