@@ -47,6 +47,10 @@ body{
     border: none;
     outline: none;
     cursor: pointer;
+    a {
+        color: $black;
+        text-decoration: none;
+    }
 }
 
 .dark-btn {
@@ -56,6 +60,10 @@ body{
         background-color: $white;
         color: $light-black;
     }
+    a {
+        color: $font-color;
+        text-decoration: none;
+    }
 }
 
 
@@ -63,6 +71,9 @@ h1 {
     font-family: "Roboto serif", serif;
     font-weight: 600;
     font-size: 6.4rem;
+    .h1-lg {
+        font-size: 7.7rem;
+    }
 }
 
 h2 {
@@ -100,7 +111,19 @@ p{
     font-weight: 400;
     letter-spacing: 0.03rem;
     font-size: 1.6rem;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 }
+
+label {
+    font-family: "DM sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.03rem;
+    font-size: 1.8rem;
+}
+
 .p-md {
     font-size: 2.5rem;
 }
@@ -510,95 +533,6 @@ footer {
     }
 }
 
-@media (min-width: 480px) {
-    .text-content {
-        gap: 6rem;
-    }
-}
-
-@media (min-width: 600px) { 
-    .quoteSwiper {
-        height: 56rem !important;
-    }
-}
-
-
-@media (min-width: 780px) {
-    .logo {
-        max-width: 15.5rem;
-    }
-    .partners .wrapper {
-        flex-direction: row;
-        align-items: center;
-    }
-    .quoteSwiper {
-        height: 58rem !important;
-    }
-    #showcase .container {
-        justify-content: center;
-        .col {
-            width: 100%;
-            max-width: 66.5rem;
-        }
-    }
-    footer {
-        .upper-footer {
-            flex-direction: row;
-        }
-        .bottom-footer {
-            flex-direction: row;
-        }
-    }
-    .swiper-slide {
-        padding: 4.5rem 10rem;
-    }
-}
-
-@media (min-width: 1280px) {
-    .circles-container {
-        display: block;
-    }
-    .quoteSwiper {
-        height: 48rem !important;
-    }
-    .heading-container {
-        margin: 10rem auto 0;
-    }
-    #process .container {
-        flex-direction: row;
-    }
-}
-
-
-@media (min-width: 1440px) {
-    .container { 
-      padding: 0;
-    }
-    #aboutUs{
-        height: 90rem;
-        .container {
-            padding: 0;
-        }
-        .swiper-container {
-            display: block;
-        }
-    }
-    #projectsHeader {
-        .container {
-            padding: 92px 72px 155px;
-        }
-        .swiper-container {
-            display: block;
-        }
-    }
-    #showcase .container {
-        .col {
-            width: 50%;
-            max-width: 66.5rem;
-        }
-    }
-}
-
 .flex-2 {
     display: flex;
     gap: 2px;
@@ -620,6 +554,9 @@ footer {
     .container {
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
     .card {
         width: 100%;
@@ -639,7 +576,8 @@ footer {
     .container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 70px;
         min-height: 950px;
         .text-content {
             width: 100%;
@@ -654,7 +592,6 @@ footer {
             flex-direction: column;
             flex-wrap: wrap;
             gap: 10px;
-            max-height: 140px;
             max-width: 600px;
             li {
                 position: relative;
@@ -678,6 +615,7 @@ footer {
         }
     }
     .wrapper {
+        display: none;
         width: 725px;
         height: 725px;
         position: relative;
@@ -769,9 +707,12 @@ footer {
 
 #team {
     .container {
-        margin: 80px auto 100px;
+        margin: 80px auto 0;
         display: flex;
         justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+        flex-direction: column;
     }
     .icon {
         width: 3.5rem;
@@ -821,6 +762,8 @@ footer {
 }
 
 #banner {
+    display: flex;
+    justify-content: center;
     .container {
         display: flex;
         flex-direction: column;
@@ -833,8 +776,10 @@ footer {
         background-repeat: no-repeat;
         border-radius: 20px;
         color: $font-color;
-        padding: 45px 0;
-        margin-bottom: 100px;
+        padding: 45px 30px;
+        text-align: center;
+        margin: 100px 20px 100px;
+        width: 100%;
         .btn {
             transition: .3s all ease-in;
             &:hover {
@@ -842,6 +787,255 @@ footer {
                 border: 1px solid $border-color;
                 color: $font-color;
             }
+        }
+    }
+}
+
+#contacts {
+    margin: 150px auto 100px;
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+        .text-content {
+            max-width: 400px;
+            h2 {
+                margin-bottom: 32px;
+            }
+            .contact-container {
+                padding: 32px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                border-bottom: 1px solid $grey;
+                border-top: 1px solid $grey;
+                margin: 32px 0 18px;
+                .contact {
+                    display: flex;
+                    align-items: center;
+                    gap: 26px;
+                }
+            }
+            .icon-container {
+                display: flex;
+                gap: 40px;
+            }
+        }
+    }
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+    .icon-light {
+        background-color: $font-color;
+        color: $background-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form {
+        min-height: 500px;
+        border-radius: 20px;
+        background-color: $card-background-color;
+        max-width: 800px;
+        width: 100%;
+        form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 45px 40px;
+            label {
+                margin-bottom: 26px;
+            }
+            input[type="submit"] {
+                font-size: 18px;
+            }
+            input:not([type="submit"]) {
+                width: 100%;
+                border: none;
+                outline: none;
+                border-bottom: 1px $grey solid;
+                background-color: transparent;
+                height: 24px;
+                line-height: 24px;
+                font-size: 16px;
+                margin-bottom: 52px;
+            }
+            > div {
+                width: 100%;
+                min-height: 75px;
+                display: flex;
+                flex-direction: column;
+                &:not(.w-max) {
+                    max-width: 325px;
+                }
+            }
+        }
+    }
+}
+
+.w-max {
+    width: 100%;
+}
+
+#map {
+    .container {
+        iframe {
+            width: 100%;
+            min-height: 315px;
+            border-radius: 20px;
+        }
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 480px) {
+    #aboutHeader,
+    #projectsHeader {
+        .container { 
+            padding: 30px;
+        }
+    }
+
+    .text-content {
+        gap: 6rem;
+    }
+    .container {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 600px) { 
+    .quoteSwiper {
+        height: 56rem !important;
+    }
+    #mission {
+        ul {
+            max-height: 140px;
+        }
+    }
+}
+
+
+@media (min-width: 780px) {
+    .logo {
+        max-width: 15.5rem;
+    }
+    .partners .wrapper {
+        flex-direction: row;
+        align-items: center;
+    }
+    .quoteSwiper {
+        height: 58rem !important;
+    }
+    #showcase .container {
+        justify-content: center;
+        .col {
+            width: 100%;
+            max-width: 66.5rem;
+        }
+    }
+    footer {
+        .upper-footer {
+            flex-direction: row;
+        }
+        .bottom-footer {
+            flex-direction: row;
+        }
+    }
+    .swiper-slide {
+        padding: 4.5rem 10rem;
+    }
+    #numbers {
+        .container {
+            flex-direction: row;
+            p {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .circles-container {
+        display: block;
+    }
+    .quoteSwiper {
+        height: 48rem !important;
+    }
+    .heading-container {
+        margin: 10rem auto 0;
+    }
+    #process .container {
+        flex-direction: row;
+    }
+    #numbers {
+        .container {
+            p {
+                padding: 0;
+            }
+        }
+    }
+    #team {
+        .container {
+            flex-direction: row;
+        }
+    }
+    #contacts {
+        .container {
+            justify-content: space-between;
+        }
+    }
+}
+
+
+@media (min-width: 1440px) {
+    body {
+        padding: 0;
+    }
+    #aboutHeader,
+    #projectsHeader {
+        .container { 
+            padding: 0;
+        }
+    }
+    #projectsHeader {
+        .container {
+            margin: 180px auto 0;
+        }
+    }
+    .container { 
+      padding: 0;
+    }
+    #aboutUs{
+        height: 90rem;
+        .container {
+            padding: 0;
+        }
+        .swiper-container {
+            display: block;
+        }
+    }
+    #aboutHeader {
+        .container {
+            padding: 92px 72px 155px;
+        }
+        .swiper-container {
+            display: block;
+        }
+    }
+    #showcase .container {
+        .col {
+            width: 50%;
+            max-width: 66.5rem;
+        }
+    }
+    #mission {
+        .wrapper {
+            display: block;
         }
     }
 }
